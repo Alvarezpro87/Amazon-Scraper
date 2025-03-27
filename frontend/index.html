@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Product Scraper</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Amazon Product Scraper</h1>
+    </header>
+
+    <section class="search-section">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Enter search keyword..."
+        autofocus
+      />
+      <button id="scrapeButton">Search</button>
+    </section>
+
+    <!-- Seção de resultados + container para o spinner -->
+    <section class="results-section">
+      <!-- Container para centralizar o spinner -->
+      <div class="spinner-container hidden" id="loadingIndicator">
+        <div class="spinner"></div>
+      </div>
+
+      <!-- Aqui ficarão os cartões dos produtos -->
+      <div class="products-grid" id="results"></div>
+    </section>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
